@@ -46,16 +46,17 @@ $(function() {
 
         // Write a test that ensures the menu element is hidden by default.
         it('menu is hidden by default', function() {
-            expect($('body').hasClass('menu-hidden')).toEqual(true);
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
         //write a test that ensures the menu changes visibility when the menu is clicked
         it('menu changes the visibility when is clicked', function() {
-            $('.menu-icon-link').trigger('click');
-            expect($('body').hasClass('menu-hidden')).toBe(false);
 
             $('.menu-icon-link').trigger('click');
-            expect($('body').hasClass('menu-hidden').toBe(true));
+            expect($('body').hasClass('menu-hidden')).not.toBe(true);
+
+            $('.menu-icon-link').trigger('click');
+            expect($('body').hasClass('menu-hidden').toBe(true);
         }); 
     });      
 
