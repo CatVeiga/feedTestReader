@@ -79,16 +79,17 @@ $(function() {
     describe('New Feed Selection', function(){
         
         //test ensures when a new feed is loaded
-       beforeEach(function (done) {
-           $('.feed').empty();
+       beforeEach(function (done) {  
+           //feed 0 loading         
            loadFeed(0, function () {
-               feedStarts = $('.feed').find(allFeeds.url);
+               feedStarts = $('.feed').html();
+            //feed 1 loading   
+            loadFeed(1, function() {
+               feedEnds = $('.feed').html();
+               //starts the tests
                done();
-           });
-           loadFeed(1, function() {
-               feedEnds = $('.feed').find(allFeeds.url);
-               done();
-           });
+                });
+            }); 
         });
         it('feed are not equal', function() {
            expect(feedStarts).not.toEqual(feedEnds);
