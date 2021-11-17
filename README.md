@@ -1,11 +1,15 @@
 # Feed Test Reader with Jasmine
 This project is part of the nanodegree in Front-End by Udacity.
 
-# Description
+## Description
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
-# Instructions 
+## DEPLOYMENT
+
+https://catveiga.github.io/feedTestReader/#
+
+## Instructions 
 
 The tests are include in the feedreader.js file. 
 
@@ -33,7 +37,7 @@ Initial Entries:
 * feed are not equal;
 
 
-# References: 
+## References: 
 
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric);
 
@@ -41,5 +45,5 @@ Original Repository [required project assets](http://github.com/udacity/frontend
 
 Jasmine [Jasmine documentation](http://jasmine.github.io).
 
-# Authors
+## Authors
 [catarina veiga](https://github.com/cveiga819)
